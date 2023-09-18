@@ -422,11 +422,11 @@ h6 {
 }
 
 #hero .hero-container {
-  position: absolute;
+  /* position: absolute;
   bottom: 0px;
   top: 500px;
   left: 0px;
-  right: 0px;
+  right: 0px; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -435,7 +435,7 @@ h6 {
 }
 
 #hero h1 {
-  margin: 0 0 10px 0;
+  margin-top: 50px;
   font-size: 64px;
   font-weight: 700;
   line-height: 56px;
@@ -451,6 +451,7 @@ h6 {
   text-transform: uppercase;
   font-weight: 700;
   text-shadow: -1px 0 2px #2f4d5a;
+  margin-top: 10px;
 }
 
 #hero .btn-get-started {
@@ -480,7 +481,7 @@ h6 {
 
 @media (max-width: 768px) {
   #hero h1 {
-    font-size: 28px;
+    font-size: 38px;
     line-height: 36px;
   }
 
@@ -509,12 +510,16 @@ section {
 }
 
 .section-title h2 {
-  font-size: 32px;
+  font-size: 42px;
   font-weight: bold;
   position: relative;
   margin-bottom: 30px;
-  color: #00b3ff;
+  color: #ffffff;
   z-index: 2;
+}
+
+.section-title p {
+  font-size: 22px;
 }
 
 .section-title h2::after {
@@ -525,7 +530,7 @@ section {
   transform: translate(-50%, -50%);
   width: 122px;
   height: 66px;
-  background: url(..img/pepefrens.png) no-repeat;
+  /* background: url(..img/pepefrens.png) no-repeat; */
   z-index: -1;
 }
 
@@ -616,10 +621,12 @@ section {
   font-size: 34px;
   color: #00b3ff;
   margin-bottom: 30px;
+  padding-top: 44px;
 }
 
 .about .content p {
   margin-bottom: 30px;
+  font-size: 22px;
 }
 
 .about .content .about-btn {
@@ -700,6 +707,12 @@ section {
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
+
+#services {
+  background-image: url(../img/pepehappy.jpg);
+  background-position-x: -200px;
+  background-position-y: 350px;
+}
 .services .icon-box {
   padding: 30px;
   position: relative;
@@ -1490,8 +1503,11 @@ section {
 
 #pepecoinmainimg {
   display: block;
+  width: 550px;
+  height: 550px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 30px;
   filter: drop-shadow(12px 12px 12px #000000);
 }
 
@@ -1507,6 +1523,25 @@ section {
   background-color: #000000;
 }
 
+.ahha {
+  display: flex;
+	justify-content: center;
+}
+
+#gudmornin, #be-nice-man, #butterfly, #happy-pepe {
+  width: 261px;
+  height: 261px;
+  border-radius: 20px;
+}
+
+#love-symbol-title {
+  text-align: center;
+}
+
+#love-symbol-para {
+  text-align: justify;
+}
+
 #social-links #reddit-link, #social-links #discord-link {
   display: inline;
   padding:5px;
@@ -1519,8 +1554,8 @@ section {
 }
 
 #reddit-img, #discord-img {
-  width: 50px;
-  height: 50px;
+  width: 80px;
+  height: 80px;
 }
 
 #pepe-logo-text {
@@ -1541,4 +1576,32 @@ section {
 
 #header .link-disabled {
   color: rgb(112, 112, 112);
+}
+
+/* Mobile Styles */
+
+@media (max-width: 768px) {
+  #pepecoinmainimg {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+@media (max-width: 492px) {
+  #pepecoinmainimg {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  #hero .hero-container {
+    top: 200px;
+  }
+}
+
+@media (max-width: 492px) {
+  #hero .hero-container {
+    top: 0px;
+  }
 }
