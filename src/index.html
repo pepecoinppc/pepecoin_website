@@ -14,23 +14,23 @@
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 
   <!-- Favicons -->
-  <link href="../assets/img/favicon.ico" rel="icon">
-  <link href="../assets/img/favicon.ico" rel="apple-touch-icon">
+  <link href="assets/img/favicon.ico" rel="icon">
+  <link href="assets/img/favicon.ico" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 
   <!-- Template Main CSS File -->
-  <link href="../assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: Squadfree
@@ -49,7 +49,7 @@
 
       <div class="logo">
         <a href="#top">
-        <img src="../assets/img/pepecoinlogo.svg" alt="pepecoin logo" class="img-fluid">
+        <img src="assets/img/pepecoinlogo.svg" alt="pepecoin logo" class="img-fluid">
         <h1 id="pepe-logo-text" class="text-light"><span>PEPECOIN</span></h1>
         </a>
       </div>
@@ -60,7 +60,7 @@
           <li><a class="nav-link scrollto" href="#services">Community</a></li>
           <li><a class="nav-link scrollto link-disabled" href="#team">Pepecoin Wallet</a></li>
           <!-- <li><a class="nav-link scrollto" href="#portfolio">About Us</a></li> -->
-          <li><a class="nav-link scrollto link-disabled" href="#team">Announcements</a></li>
+          <!-- <li><a class="nav-link scrollto link-disabled" href="#team">Announcements</a></li> -->
           <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="#">Drop Down 1</a></li>
@@ -122,8 +122,11 @@
 
   <!-- ======= Hero Section ======= -->
   <section id="hero">
+    <video class="video-bg" autoplay muted loop onloadstart="this.playbackRate = 0.75;">
+      <source src="assets/img/rain-nature-slow-motion-live-wallpaper.mp4" type="video/mp4">
+    </video>
     <div class="introduction">
-      <img id="pepecoinmainimg" src="../assets/img/pepecoin_no_coin.svg" alt="Pepe">
+      <img id="pepecoinmainimg" src="assets/img/pepecoin_no_coin.svg" alt="Pepe">
     </div>
     <div class="hero-container" data-aos="fade-up">
       <h1>₱epecoin</h1>
@@ -141,8 +144,8 @@
         <div class="row no-gutters">
           <div class="content col-xl-5 d-flex align-items-stretch" data-aos="fade-up">
             <div class="content">
-              <h3>About Pepecoin</h3>
-              <p>
+              <h3 id="pepecoin-about-title">About Pepecoin</h3>
+              <p id="pepecoin-about-para">
                 Pepecoin is a community focused cryptocurrency created by one of the original Dogecoin shibes from 2013. It was created for one purpose, to create a new and fun community just like the original Dogecoin community.
               </p>
               <!-- <a href="#" class="about-btn">Learn More <i class="bx bx-chevron-right"></i></a> -->
@@ -186,11 +189,11 @@
         <div class="row align-items-center">
           
 
-          <div class="content col-xl-6 d-flex align-items-stretch" data-aos="fade-up">
-            <div class="content">
+          <div id="pepecoin-core-content-col" class="content col-xl-6 d-flex align-items-stretch" data-aos="fade-up">
+            <div id="pepecoin-core-content" class="content">
               
-              <div class="wholesome-pepes col-md-12 icon-box" data-aos="fade-up" data-aos-delay="100">
-                <img src="../assets/img/pepecore_edited.png" alt="image of pepecore program" class="img-fluid">
+              <div id="pepecore-image" class="wholesome-pepes col-md-12 icon-box" data-aos="fade-up" data-aos-delay="100">
+                <img src="assets/img/pepecore_edited.png" alt="image of pepecore program" class="img-fluid">
               </div>
                 
               
@@ -236,7 +239,7 @@
 
               <h3 id="love-symbol-title">Is Pepe a Hate Symbol?</h3>
               <p id="love-symbol-para">
-                No. Pepe, originally created as a benign internet meme, should not be automatically classified as a hate symbol. While it is true that certain individuals have misappropriated Pepe for hateful or offensive purposes, it is essential to recognize that the meme's meaning is highly context-dependent. Pepe's vast popularity stems from its versatility, allowing users to express a wide range of emotions and ideas, both positive and negative. Blaming Pepe as a hate symbol oversimplifies the complexity of internet culture. The responsibility lies with those who misuse it, not the character itself.
+                No. Pepe, originally created as a benign internet meme, should not be automatically classified as a hate symbol. While it is true that certain individuals have misappropriated Pepe for hateful or offensive purposes, it is essential to recognize that the meme's meaning is highly context dependent. Pepe's vast popularity stems from its versatility, allowing users to express a wide range of emotions and ideas, both positive and negative. Labeling Pepe as a hate symbol oversimplifies the complexity of internet culture. The responsibility lies with those who misuse it, not the character itself.
               </p>
 
             </div>
@@ -258,31 +261,31 @@
 
         <!-- <div class="row gx-10 gy-10 align-items-center">
           <div class="wholesome-pepes col-md-3 icon-box" data-aos="fade-up" data-aos-delay="100">
-            <img id="gudmornin" src="../assets/img/gudmornin.webp" alt="pepecoin logo" class="img-fluid">
+            <img id="gudmornin" src="assets/img/gudmornin.webp" alt="pepecoin logo" class="img-fluid">
           </div>
           <div class="wholesome-pepes col-md-3 icon-box" data-aos="fade-up" data-aos-delay="200">
-            <img id="be-nice-man" src="../assets/img/beNiceMan.jpg" alt="pepecoin logo" class="img-fluid">
+            <img id="be-nice-man" src="assets/img/beNiceMan.jpg" alt="pepecoin logo" class="img-fluid">
           </div>
           <div class="wholesome-pepes col-md-3 icon-box" data-aos="fade-up" data-aos-delay="300">
-            <img id="butterfly" src="../assets/img/butterfly.jpg" alt="pepecoin logo" class="img-fluid">
+            <img id="butterfly" src="assets/img/butterfly.jpg" alt="pepecoin logo" class="img-fluid">
           </div>
           <div class="wholesome-pepes col-md-3 icon-box" data-aos="fade-up" data-aos-delay="400">
-            <img id="happy-pepe" src="../assets/img/happyPepe.png" alt="pepecoin logo" class="img-fluid">
+            <img id="happy-pepe" src="assets/img/happyPepe.png" alt="pepecoin logo" class="img-fluid">
           </div>
         </div> -->
 
         <!-- <div class="row gx-10 gy-10 align-items-center">
           <div class="wholesome-pepes col-md-3 icon-box" data-aos="fade-up" data-aos-delay="100">
-            <img id="gudmornin" src="../assets/img/gudmornin.webp" alt="pepecoin logo" class="img-fluid">
+            <img id="gudmornin" src="assets/img/gudmornin.webp" alt="pepecoin logo" class="img-fluid">
           </div>
           <div class="wholesome-pepes col-md-3 icon-box" data-aos="fade-up" data-aos-delay="200">
-            <img id="be-nice-man" src="../assets/img/beNiceMan.jpg" alt="pepecoin logo" class="img-fluid">
+            <img id="be-nice-man" src="assets/img/beNiceMan.jpg" alt="pepecoin logo" class="img-fluid">
           </div>
           <div class="wholesome-pepes col-md-3 icon-box" data-aos="fade-up" data-aos-delay="300">
-            <img id="butterfly" src="../assets/img/butterfly.jpg" alt="pepecoin logo" class="img-fluid">
+            <img id="butterfly" src="assets/img/butterfly.jpg" alt="pepecoin logo" class="img-fluid">
           </div>
           <div class="wholesome-pepes col-md-3 icon-box" data-aos="fade-up" data-aos-delay="400">
-            <img id="happy-pepe" src="../assets/img/happyPepe.png" alt="pepecoin logo" class="img-fluid">
+            <img id="happy-pepe" src="assets/img/happyPepe.png" alt="pepecoin logo" class="img-fluid">
           </div> -->
         </div>
         
@@ -308,9 +311,10 @@
 
         <div id="social-links">
           <div id="reddit-link">
-            <a href="https://reddit.com/r/pepecoin">
-            <img id="reddit-img" src="../assets/img/reddit.svg" alt="Reddit">
-            </a>
+            <!-- <a href="https://reddit.com/r/pepecoin">
+            <img id="reddit-img" src="assets/img/reddit.svg" alt="Reddit">
+            </a> -->
+            <img id="reddit-img" src="assets/img/reddit.svg" alt="Reddit">
           </div>
           <!-- <div id="discord-link">
             <img id="discord-img" src="assets/img/discord.svg" alt="Discord">
@@ -842,15 +846,15 @@
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a> -->
   
-  <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="../assets/vendor/aos/aos.js"></script>
-  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="../assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
 
-  <script src="../assets/js/main.js"></script>
+  <script src="assets/js/main.js"></script>
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-KHJ7Y9CB0N"></script>
