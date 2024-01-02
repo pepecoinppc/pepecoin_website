@@ -99,6 +99,14 @@ h6 {
   padding: 12px;
 }
 
+.logo {
+  margin-left: 30px;
+}
+
+#hamburger-menu {
+  margin-right: 10px;
+}
+
 #header .logo h1 {
   font-size: 24px;
   margin: 0;
@@ -134,8 +142,11 @@ h6 {
 * Desktop Navigation 
 */
 .navbar {
+  display: table;
   padding: 0;
   position: static;
+  margin-right: 0px;
+  margin-left: auto;
 }
 
 .navbar ul {
@@ -310,9 +321,6 @@ h6 {
     display: block;
   }
 
-  .navbar ul {
-    display: none;
-  }
 }
 
 .navbar-mobile {
@@ -442,8 +450,8 @@ h6 {
 }
 
 #hero h1 {
-  margin-top: 30px;
-  font-size: 64px;
+  margin-top: 70px;
+  font-size: clamp(3rem, 10vw, 7rem);
   font-weight: 700;
   line-height: 56px;
   text-transform: uppercase;
@@ -453,26 +461,27 @@ h6 {
 
 #hero h2 {
   color: #fff;
-  margin-bottom: 50px;
-  font-size: 20px;
-  text-transform: uppercase;
-  font-weight: 700;
+  margin-bottom: 0px;
+  font-size: clamp(1.25rem, 4.5vw, 3rem);
+  min-width: 6vw;
+  font-weight: 400;
   text-shadow: -1px 0 2px #2f4d5a;
-  margin-top: 10px;
+  margin-top: 35px;
 }
 
 #hero .btn-get-started {
-  font-size: 36px;
+  font-size: 46px;
   display: inline-block;
   padding: 4px 0;
   border-radius: 50px;
   transition: 0.3s ease-in-out;
   margin: 10px;
-  width: 64px;
-  height: 64px;
+  width: 84px;
+  height: 84px;
   text-align: center;
   border: 2px solid #fff;
   color: #fff;
+  margin-top: 30px;
 }
 
 #hero .btn-get-started:hover {
@@ -483,19 +492,6 @@ h6 {
 @media (min-width: 1024px) {
   #hero {
     background-attachment: fixed;
-  }
-}
-
-@media (max-width: 768px) or (max-height: 900px) {
-  #hero h1 {
-    font-size: 38px;
-    line-height: 36px;
-  }
-
-  #hero h2 {
-    font-size: 18px;
-    line-height: 24px;
-    margin-bottom: 30px;
   }
 }
 
@@ -601,6 +597,7 @@ section {
   background-size: cover;
   padding: 60px 0;
   position: relative;
+  height: auto !important;
 }
 
 .about::before {
@@ -701,6 +698,12 @@ a {
 .about .icon-boxes .icon-box p {
   font-size: 15px;
   color: #c0c0c0;
+}
+
+#header-div {
+  margin-left: 0px;
+  margin-right: 0px;
+  width: 100%;
 }
 
 @media (max-width: 1200px) {
@@ -1516,13 +1519,17 @@ a {
 
 /* custom styles */
 
+
+
 #pepecoinmainimg {
   display: block;
-  width: 550px;
-  height: 550px;
+  width: 90%;
+  height: 90%; 
+  max-width: 800px;
+  max-height: 60vh;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 30px;
+  margin-top: 12vh;
   filter: drop-shadow(12px 12px 12px #000000);
 }
 
@@ -1555,7 +1562,7 @@ a {
 }
 
 #main {
-  background-color: #000000;
+  background-color: #0e0e0e;
 }
 
 .ahha {
@@ -1568,6 +1575,10 @@ a {
   height: 250px;
   border-radius: 20px;
   margin-bottom: 50px;
+}
+
+#pepify-pre, #pepify-post {
+  border-radius: 20px;
 }
 
 #pepify-pre, #pepify-post, #green-arrow {
@@ -1621,7 +1632,7 @@ a {
   height: 200px;
   
 }
-q
+
 #header .link-disabled {
   color: rgb(112, 112, 112);
 }
@@ -1665,19 +1676,121 @@ q
   
 }
 
+#pepe-guild-image, #pepe-explorer-image {
+  width: 800px;
+  height: 350px;
+}
+
 .footer-title {
   text-align: center;
   margin-top: 10px;
 }
+#background-wrapper {
+  background-color: rgb(22, 22, 22);
+}
+
+.about {
+  height: 700px;
+}
+
+#additional-resources-title {
+  text-align: center;
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+#hamburger-menu .about-icons {
+  color: white;
+}
+
+#hamburger-menu-btn {
+  background-color: black;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  padding-left: 3px;
+  border: 0;
+}
+
+.navbar .dropdown ul {
+  left: -152px;
+  background-color: black;
+  margin-top: 34px;
+}
+
+.navbar .dropdown ul a {
+  color: white;
+  font-size: 17px;
+}
+
+.navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover>a {
+  color: #03d663;
+}
+
+
 
 /* Mobile Styles */
 
-@media (max-width: 768px) or (max-height: 900px) {
-  #pepecoinmainimg {
-    width: 400px;
-    height: 400px;
+@media (max-height: 1250px) {
+  #pepecoinmainimg { 
+    max-height: 40vh;
   }
+
+  #hero h1 {
+    font-size: clamp(3rem, 10vw, 5rem);
 }
+
+  #hero h2 {
+    font-size: clamp(1.25rem, 4.5vw, 2rem);
+
+}
+}
+
+@media (max-height: 768px) {
+  #pepecoinmainimg { 
+    max-height: 40vh;
+  }
+
+  #hero h1 {
+    font-size: clamp(3rem, 10vw, 4rem);
+    margin-top: 30px;
+}
+
+  #hero h2 {
+    font-size: clamp(1.25rem, 4.5vw, 1.5rem);
+    margin-top: 0px;
+
+}
+
+  #hero .btn-get-started {
+    font-size: 32px;
+    width: 64px;
+    height: 64px;
+    margin-top: 16px;
+  }
+
+@media (max-width: 600px) {
+  #hero h1 {
+    margin-top: 30px;
+
+}
+}
+
+#hero h2 {
+  
+  margin-top: 0px;
+}
+
+#hero .btn-get-started {
+  font-size: 32px;
+  width: 64px;
+  height: 64px;
+  margin-top: 26px;
+}
+}
+
 
 
 @media (max-width: 768px) {
@@ -1693,13 +1806,16 @@ q
   }
 }
 
-@media (max-width: 492px) or (max-height: 750px) {
-  #pepecoinmainimg {
-    width: 300px;
-    height: 300px;
-  }
-}
+@media (max-width: 492px) {
+  
 
+  #hero .btn-get-started {
+    font-size: 32px;
+    width: 64px;
+    height: 64px; 
+    margin-top: 36px;
+}
+}
 @media (max-width: 492px) {
   #hero .hero-container {
     top: 0px;
@@ -1738,31 +1854,66 @@ q
 
 @media (max-width: 492px) {
   #pepecore-image, #pepewallet-image {
-    padding-left: 54px;
-    padding-right: 54px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media (max-width: 492px) {
+  div.content {
+    padding: 0;
   }
 }
 
 
+
 @media (max-width: 492px) {
-  #pepecoin-about-para, #pepecoin-about-title {
+  #pepecoin-about-para, #pepecoin-about-title, #getting-started-title, #getting-started-para, #cold-storage-title, #cold-storage-para, #tipbot-title, #tipbot-para-1, #tipbot-para-2  {
     margin-top: 0px;
     text-align: left;
-    padding-left: 54px;
-    padding-right: 54px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
 @media (max-width: 492px) {
   #love-symbol-para, #love-symbol-title {
     text-align: left;
-    padding-left: 54px;
-    padding-right: 54px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  p {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
 @media (max-width: 492px) {
+  h3 {
+    font-size: 25px !important;
+  }
+  p {
+    font-size: 20px !important;
+  }
+}
+
+@media (max-width: 1200px) {
   #pepecoin-core-text {
+    margin-bottom: 0px;
+    order: -1;
+  }
+
+  #pepecoin-wallet-text {
+    margin-bottom: 0px;
+    order: -1;
+  }
+
+  #pepecoin-mining-text {
+    margin-bottom: 0px;
+    order: -1;
+  }
+
+  #pepecoin-explorer-text {
     margin-bottom: 0px;
     order: -1;
   }
@@ -1774,6 +1925,8 @@ q
     order: -1;
   }
 }
+
+
 
 @media (max-width: 1200px) {
   #pepecoin-core-text, #pepecoin-wallet-text, #pepecoin-core-content-col, #pepecoin-wallet-content-col {
@@ -1788,39 +1941,19 @@ q
   }
 }
 
-@media (max-width: 300px) or (max-height: 620px) {
-  #pepecoinmainimg {
-    width: 200px;
-    height: 200px;
-  }
+@media (max-width: 300px) or (max-height: 680px) {
+  
 }
 
-@media (max-height: 510px) {
-  #pepecoinmainimg {
-    width: 150px;
-    height: 150px;
-  }
+@media (max-height: 560px) {
+  
 
-  #hero h1 {
-    font-size: 26px;
-    line-height: 22px;
-    margin-top: 16px;
-    margin-bottom: 0px;
-  }
 
-  #hero h2 {
-    font-size: 14px;
-    line-height: 20px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
+  
 }
 
 @media (max-height: 368px) {
-  #pepecoinmainimg {
-    width: 100px;
-    height: 100px;
-  }
+  
 
   #hero .btn-get-started {
     width: 30px;
@@ -1862,6 +1995,15 @@ q
     
   }
 } */
+@media (max-width: 1280px) {
+  #hamburger-menu {
+    display: initial;
+  }
+
+  .navbar ul {
+    display: none;
+  }
+}
 
 @media (max-width: 992px) {
   #pepify-pre, #pepify-post  {
@@ -1869,6 +2011,7 @@ q
     height: 200px;
 
   }
+  
 
   #green-arrow {
     height: 200px;
