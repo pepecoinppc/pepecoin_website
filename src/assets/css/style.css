@@ -1570,6 +1570,11 @@ a {
 	justify-content: center;
 }
 
+.about-para {
+  padding-left: 0;
+  padding-right: 0;
+  font-size: 15px !important;
+}
 #gudmornin, #be-nice-man, #frens, #dad-pepe {
   width: 250px;
   height: 250px;
@@ -1660,6 +1665,7 @@ a {
 .social-logos {
   height: 60px;
   width: 60px;
+  margin-bottom: 10px;
 }
 
 #socials {
@@ -1674,11 +1680,6 @@ a {
   margin-left: 5px;
   margin-right: 5px;
   
-}
-
-#pepe-guild-image, #pepe-explorer-image {
-  width: 800px;
-  height: 350px;
 }
 
 .footer-title {
@@ -1804,6 +1805,7 @@ a {
     padding-left: 54px;
     padding-right: 54px;
   }
+
 }
 
 @media (max-width: 492px) {
@@ -1835,7 +1837,7 @@ a {
 }
 
 @media (max-width: 492px) {
-  #getting-started-title, #cold-storage-title {
+  #getting-started-title, #cold-storage-title, #tipbot-title {
     padding-top: 0px;
   }
 }
@@ -1852,8 +1854,8 @@ a {
   }
 }
 
-@media (max-width: 492px) {
-  #pepecore-image, #pepewallet-image {
+@media (max-width: 580px) {
+  #pepecore-image, #pepewallet-image, #pepe-guild-image, #pepe-explorer-image {
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -1866,13 +1868,14 @@ a {
 
 
 
-@media (max-width: 492px) {
+@media (max-width: 600px) {
   #pepecoin-about-para, #pepecoin-about-title, #getting-started-title, #getting-started-para, #cold-storage-title, #cold-storage-para, #tipbot-title, #tipbot-para-1, #tipbot-para-2  {
     margin-top: 0px;
     text-align: left;
     padding-left: 20px;
     padding-right: 20px;
   }
+
 }
 
 @media (max-width: 492px) {
@@ -1932,6 +1935,10 @@ a {
   #pepecoin-core-text, #pepecoin-wallet-text, #pepecoin-core-content-col, #pepecoin-wallet-content-col {
     margin: auto;
     width: auto;
+  }
+
+  .about .content {
+    padding-top: 10px;
   }
 }
 
