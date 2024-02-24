@@ -1668,6 +1668,16 @@ a {
   margin-bottom: 10px;
 }
 
+#coinpaprika-img {
+  height: 56px;
+  width: 56px;
+  border-radius: 60%;
+}
+
+#xeggex-img{
+  border-radius: 60%;
+}
+
 #socials {
   margin: auto;
   text-align: center;
@@ -1675,7 +1685,7 @@ a {
   padding-top: 20px;
 }
 
-#discord-link, #getpepecoin-link, #telegram-link, #github-link, #twitter-link, #pepeguild-link, #pepe-explorer-link  {
+#discord-link, #getpepecoin-link, #telegram-link, #github-link, #twitter-link, #pepeguild-link, #pepe-explorer-link, #coinpaprika-link, #xeggex-link  {
   display:inline-block;
   margin-left: 5px;
   margin-right: 5px;
