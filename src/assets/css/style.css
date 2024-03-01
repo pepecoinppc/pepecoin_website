@@ -1650,8 +1650,24 @@ a {
   margin-left: 1px;
 }
 
-#core-download {
+#download-github {
   margin-left: 1px;
+}
+
+#win-32-btn {
+  margin-right: 5px;
+}
+
+#core-download-github, #windows-32-download, #windows-64-download, #mac-download, #linux-download {
+  display: inline-block;
+}
+
+#windows-32-download, #windows-64-download, #mac-download, #linux-download {
+  margin-right: 5px;
+}
+
+#core-downloads {
+  padding-right: 0px;
 }
 
 #pepecoin-core-text, #pepecoin-wallet-text {
@@ -1674,7 +1690,7 @@ a {
   border-radius: 60%;
 }
 
-#xeggex-img{
+#xeggex-img, #miningpoolstats-img{
   border-radius: 60%;
 }
 
