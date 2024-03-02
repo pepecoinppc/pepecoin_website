@@ -252,7 +252,7 @@
             
             
             <div id="pepecoin-core-text" class="content col-xl-5 offset-lg-1 d-flex align-items-stretch" data-aos="fade-up">
-              <div class="content">
+              <div class="content" id="core-downloads">
 
                 <h3 id="getting-started-title">Pepecoin Core</h3>
 
@@ -260,18 +260,81 @@
                   Send, receive, and manage your Pepecoin effortlessly with the intuitive wallet interface.
                 </p>
 
-                <a id="core-download-windows" href="https://github.com/pepecoinppc/pepecoin/releases/tag/v1.0.0" alt="Download button for Pepecoin Core">
-                  <button type="button" class="btn btn-success btn-lg">Downloads</button>
-                </a>
+                <div id="download-buttons">
+                  
+                  
+                  <script>
+                    function elementFromHtml(html) {
+                      const template = document.createElement("template");
+
+                      template.innerHTML = html.trim();
+
+                      return template.content.firstElementChild;
+                    }
+
+                    if (navigator.userAgentData.platform.toLowerCase() === ("windows" || "win16" || "win32" || "wince")) {
+                      let windows32 = document.createElement("div");
+                      windows32.setAttribute("id", "windows-32-download")
+                      let windows64 = document.createElement("div");
+                      windows64.setAttribute("id", "windows-64-download")
+                      document.getElementById("download-buttons").appendChild(windows32);
+                      document.getElementById("download-buttons").appendChild(windows64);
+                      const windows32Btn = elementFromHtml(`   
+                        <a id="core-download-windows-32" href="https://github.com/pepecoinppc/pepecoin/releases/download/v1.0.0/pepecoin-1.0.0-win32-setup-unsigned.exe" alt="Download button for Windows 32 bit version of Pepecoin Core">
+                          <button type="button" id="win-32-btn" class="btn btn-success btn-lg">Windows (32 bit)</button>
+                        </a>
+                      `);
+                      const windows64Btn = elementFromHtml(`
+                        <a id="core-download-windows-64" href="https://github.com/pepecoinppc/pepecoin/releases/download/v1.0.0/pepecoin-1.0.0-win64-setup-unsigned.exe" alt="Download button for Windows 64 bit version of Pepecoin Core">
+                          <button type="button" class="btn btn-success btn-lg">Windows (64 bit)</button>
+                        </a>
+                      `);
+                      document.getElementById("windows-32-download").appendChild(windows32Btn);
+                      document.getElementById("windows-64-download").appendChild(windows64Btn);
+                    }
+
+                    if (navigator.userAgentData.platform.toLowerCase() === ("mac" || "macintosh" || "macintel" || "macppc" || "mac68k")) {
+                      let mac = document.createElement("div");
+                      mac.setAttribute("id", "mac-download");
+                      document.getElementById("download-buttons").appendChild(mac);
+                      const MacBtn = elementFromHtml(`
+                      <a id="core-download-mac" href="https://github.com/pepecoinppc/pepecoin/releases/download/v1.0.0/pepecoin-1.0.0-osx-unsigned.dmg" alt="Download button for Mac version of Pepecoin Core">
+                        <button type="button" class="btn btn-success btn-lg">  Mac  </button>
+                      </a>
+                      `);
+                      document.getElementById("mac-download").appendChild(MacBtn);
+                    }
+
+                    // if (navigator.userAgentData.platform === "Linux") {
+                    //   let linux = document.createElement("div");
+                    //   linux.setAttribute("id", "linux-download");
+                    //   document.getElementById("download-buttons").appendChild(linux);
+                    //   const LinuxBtn = elementFromHtml(`
+                    //     <a id="core-download-linux" href="" alt="Download button for Linux version of Pepecoin Core">
+                    //       <button type="button" class="btn btn-success btn-lg"> Linux </button>
+                    //     </a>
+                    //   `);
+                    //   document.getElementById("linux-download").appendChild(LinuxBtn);
+                    // }
+
+                    
+                  </script>
+
+                  <div id="core-download-github">
+                    <a id="download-github" href="https://github.com/pepecoinppc/pepecoin/releases/tag/v1.0.0" alt="Download button for Github page of Pepecoin Core">
+                      <button type="button" class="btn btn-dark btn-lg">Github</button>
+                    </a>
+                  </div>
+                
+                </div>
+
                 
 
-                <!-- <a id="core-download-mac" href="" alt="Download button for Mac version of Pepecoin Core">
-                  <button type="button" class="btn btn-secondary btn-lg disabled" disabled>  Mac  </button>
-                </a>
+                
 
-                <a id="core-download-linux" href="" alt="Download button for Linux version of Pepecoin Core">
-                  <button type="button" class="btn btn-secondary btn-lg disabled" disabled> Linux </button>
-                </a> -->
+                
+
+                
 
               </div>
             </div>
@@ -636,6 +699,7 @@
       <div class="container">
 
         <div class="section-title" data-aos="fade-in" data-aos-delay="100">
+  
           <h2 id="community-title">Community</h2>
           
           <p>Join r/Pepecoin today!</p>
@@ -683,15 +747,21 @@
               </a>
             </div> -->
     
-            <div id="twitter-link">
+            <!-- <div id="twitter-link">
               <a href="https://twitter.com/@PepecoinNetwork">
                 <img class="social-logos" id="twitter-img" src="assets/img/X_logo.svg" alt="Link to the official Pepecoin Twitter">
               </a>
-            </div>
+            </div> -->
 
-            <div id="pepeguild-link">
+            <!-- <div id="pepeguild-link">
               <a href="https://pepeguild.com/">
                 <img class="social-logos" id="pepeguild-img" src="assets/img/pepeguild_icon.webp" alt="Link to the official Pepeguild Website(mining pool)">
+              </a>
+            </div> -->
+
+            <div id="pepeguild-link">
+              <a href="https://miningpoolstats.stream/pepecoin">
+                <img class="social-logos" id="miningpoolstats-img" src="assets/img/miningpoolstats-logo.webp" alt="Link to the pepe page of miningpoolstats.stream">
               </a>
             </div>
 
@@ -713,6 +783,9 @@
               </a>
             </div>
     
+          </div>
+          <div id="pepe-assets-link">
+            Brand Assets Pack - <a href="https://pepecoin.org/assets.zip">Download</a>
           </div>
       </div>
         
