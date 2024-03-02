@@ -2091,3 +2091,15 @@ a {
 
   
 } 
+
+@media (max-width: 1400px) {
+  #core-download-github {
+    margin-top:10px;
+  }
+}
+
+@media (max-width: 800px) {
+  #core-download-github, #windows-32-download, #windows-64-download, #mac-download, #linux-download {
+    display: none;
+  }
+}
