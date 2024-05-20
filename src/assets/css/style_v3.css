@@ -454,7 +454,7 @@ h6 {
   font-size: clamp(3rem, 10vw, 7rem);
   font-weight: 700;
   line-height: 56px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   color: #fff;
   text-shadow: -1px 0 2px #2f4d5a;
 }
@@ -1767,6 +1767,10 @@ a {
   color: #03d663;
 }
 
+#pepecoin-explorer-text {
+  order: -1;
+}
+
 
 
 /* Mobile Styles */
@@ -1955,7 +1959,7 @@ a {
 
   #pepecoin-explorer-text {
     margin-bottom: 0px;
-    order: -1;
+    /* order: -1; */
   }
 }
 
