@@ -1696,6 +1696,12 @@ a {
   border-radius: 60%;
 }
 
+#coinmarketcap-img {
+  height: 58px;
+  width: 58px;
+  border-radius: 60%;
+}
+
 #xeggex-img, #miningpoolstats-img{
   border-radius: 60%;
 }
@@ -1707,7 +1713,7 @@ a {
   padding-top: 20px;
 }
 
-#discord-link, #getpepecoin-link, #telegram-link, #github-link, #twitter-link, #pepeguild-link, #pepe-explorer-link, #coinpaprika-link, #coingecko-link, #xeggex-link  {
+#discord-link, #getpepecoin-link, #telegram-link, #github-link, #twitter-link, #pepeguild-link, #pepe-explorer-link, #coinpaprika-link, #coinmarketcap-link,  #coingecko-link, #xeggex-link  {
   display:inline-block;
   margin-left: 5px;
   margin-right: 5px;
